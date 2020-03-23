@@ -1,7 +1,7 @@
 {
-  "teamDomain": "cxrate",
-  "channelName": "workouts",
-  "channelId": "C010JVARCFJ",
+  "teamDomain": "",
+  "channelName": "",
+  "channelId": "",
 
   "officeHours": {
     "on": false,
@@ -13,8 +13,8 @@
 
   "callouts": {
     "timeBetween": {
-      "minTime": 1,
-      "maxTime": 2,
+      "minTime": 20,
+      "maxTime": 40,
       "units": "minutes"
     },
     "numPeople": 3,
