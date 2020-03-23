@@ -1,7 +1,7 @@
 {
-  "teamDomain": "",
-  "channelName": "",
-  "channelId": "",
+  "teamDomain": "syftapp",
+  "channelName": "syft-workout-test",
+  "channelId": "C01086VNM2N",
 
   "officeHours": {
     "on": false,
@@ -9,7 +9,7 @@
     "end": 17
   },
 
-  "debug": false,
+  "debug": true,
 
   "callouts": {
     "timeBetween": {
