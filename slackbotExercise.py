@@ -137,6 +137,8 @@ def fetchActiveUsers(bot):
     # Check for new members
     params = {"token": USER_TOKEN_STRING, "channel": bot.channel_id}
     response = requests.get("https://slack.com/api/channels.info", params=params)
+    print("fetchActiveUsers")
+    print(response.text)
     user_ids = json.loads(response.text, encoding="utf-8")["channel"]["members"]
 
     active_users = []
@@ -181,6 +183,8 @@ def selectExerciseAndStartTime(bot):
     # Announce the exercise to the thread
     if not bot.debug:
         requests.post(bot.post_URL, data=lottery_announcement)
+        print("selectExerciseAndStartTime")
+        print(bot.post_URL)
     print(lottery_announcement)
 
     # Sleep the script until time is up
@@ -264,6 +268,8 @@ def assignExercise(bot, exercise):
     # Announce the user
     if not bot.debug:
         requests.post(bot.post_URL, data=winner_announcement)
+        print("assignExercise")
+        print(bot.post_URL)
     print(winner_announcement)
 
 
@@ -304,6 +310,8 @@ def saveUsers(bot):
 
     if not bot.debug:
         requests.post(bot.post_URL, data=s)
+        print("saveUsers")
+        print(bot.post_URL)
     print(s)
 
     # write to file

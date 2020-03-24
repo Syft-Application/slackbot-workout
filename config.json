@@ -4,12 +4,12 @@
   "channelId": "C01086VNM2N",
 
   "officeHours": {
-    "on": false,
-    "begin": 9,
+    "on": true,
+    "begin": 7,
     "end": 17
   },
 
-  "debug": true,
+  "debug": false,
 
   "callouts": {
     "timeBetween": {
